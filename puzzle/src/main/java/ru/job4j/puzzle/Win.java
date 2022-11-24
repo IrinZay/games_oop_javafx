@@ -4,7 +4,8 @@ public class Win {
     public static boolean check(int[][] board) {
         int[] diagonal = extractDiagonal(board);
         for (int index = 0; index < board.length; index++) {
-            if (diagonal[index] == 1 && (monoVertical(board, index) || monoHorizontal(board, index))) {
+            if (diagonal[index] == 1 && (monoVertical(board, index)
+                    || monoHorizontal(board, index))) {
                 return true;
             }
         }
